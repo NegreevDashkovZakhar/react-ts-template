@@ -5,7 +5,8 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@styles/*": ["src/styles/*"],
-      "@pages/*": ["src/pages/*"]
+      "@pages/*": ["src/pages/*"],
+      "@assets/*": ["assets/*"]
     },
     "noImplicitAny": true,
     "allowSyntheticDefaultImports": true,

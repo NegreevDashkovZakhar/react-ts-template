@@ -49,6 +49,7 @@ module.exports = {
       '@styles': path.join(__dirname, '/src/styles'),
       '@components': path.join(__dirname, '/src/components'),
       '@pages': path.join(__dirname, '/src/pages'),
+      '@assets': path.join(__dirname, '/assets'),
     },
   },
 
@@ -91,6 +92,10 @@ module.exports = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
+      },
+      {
+        test: /\.(png|jp(e*)g|svg|gif)$/,
+        type: 'asset/resource',
       },
     ],
   },

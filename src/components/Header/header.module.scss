@@ -1,7 +1,20 @@
 @import '@styles/__defines.scss';
 
 .header {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
   background-color: $theme-2;
   padding: 30px 20px;
+
+  &__logo {
+    width: 94px;
+    height: 43px;
+    display: inline-block;
+  }
+
+  &__navigation {
+    display: inline-block;
+  }
 }
