@@ -29,11 +29,14 @@
     "react-refresh": "^0.14.0",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "@types/react": "^18.2.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === "production") {
 
 const plugins = [
   new HtmlWebpackPlugin({
-    template: "./src/index.html",
+    template: "./static/index.html",
   }),
   new MiniCssExtractPlugin({
     filename: "[name].[contenthash].css",
@@ -27,7 +27,7 @@ module.exports = {
   mode,
   plugins,
   target,
-  entry: "./src/index.js",
+  entry: "./static/index.js",
 
   devtool: "source-map",
 
@@ -40,6 +40,13 @@ module.exports = {
   devServer: {
     hot: true,
     port: 3030,
+  },
+
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+    alias: {
+      "@": path.join(__dirname, "/src"),
+    },
   },
 
   module: {
@@ -81,6 +88,11 @@ module.exports = {
             cacheDirectory: true,
           },
         },
+      },
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        exclude: /node_modules/,
       },
     ],
   },

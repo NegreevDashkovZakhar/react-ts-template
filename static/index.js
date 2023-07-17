@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import App from "@/App";
 
-const myFirstElement = <h1>React template with webpack</h1>;
+const app = <App />;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(myFirstElement);
+root.render(app);
