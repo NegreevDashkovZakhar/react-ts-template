@@ -1,0 +1,10 @@
+@import '@styles/__defines.scss';
+
+.link {
+  color: $text-1;
+  text-decoration: none;
+  padding: 0 10px;
+  &:hover {
+    outline: 1px solid $theme-1;
+  }
+}
