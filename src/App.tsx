@@ -1,9 +1,8 @@
-import Header from '@components/Header';
-import React from 'react';
 import '@styles/normalize.scss';
+import Router from '@components/Router';
 
 const App: React.FC = () => {
-  return <Header />;
+  return <Router />;
 };
 
 export default App;
