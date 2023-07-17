@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env SERVE=true webpack serve",
+    "dev": "cross-env SERVE=true webpack serve",
     "build": "webpack",
-    "build-prod": "webpack --mode=production",
+    "prod": "webpack --mode=production",
     "clean": "rd /s /q dist"
   },
   "keywords": [],
