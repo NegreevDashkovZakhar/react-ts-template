@@ -46,6 +46,8 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"],
     alias: {
       "@": path.join(__dirname, "/src"),
+      "@styles": path.join(__dirname, "/src/styles"),
+      "@components": path.join(__dirname, "/src/components"),
     },
   },
 
