@@ -1,4 +1,4 @@
-@import '@styles/__defines.scss';
+@use '@styles/__defines.scss' as *;
 
 .link {
   color: $text-1;
